@@ -1,19 +1,19 @@
-/* @font-face {
-    font-family: arabic;
-    src: url('GESSMedium.otf');
+@font-face {
+  font-family: arabic;
+  src: url('GESSMedium.otf') format("opentype");
 }
 @font-face {
-    font-family: english;
-    src: url('Slippy-Regular.otf');
+  font-family: english;
+  src: url('Slippy-Regular.otf') format("opentype");
 }
 @font-face {
-  font-family: arabicmts;
-  src: url('29LTAzer-Medium.otf');
+font-family: arabicmts;
+src: url('29LTAzer-Medium.otf') format("opentype");
 }
 @font-face {
-  font-family: englishmts;
-  src: url('Nexa-ExtraBold.ttf');
-} */
+font-family: englishmts;
+src: url('Nexa-ExtraBold.ttf') format("opentype");
+}
 body {
     background-color: #f2f2f2;
   }
