@@ -1,0 +1,62 @@
+/* @font-face {
+    font-family: arabic;
+    src: url('GESSMedium.otf');
+}
+@font-face {
+    font-family: english;
+    src: url('Slippy-Regular.otf');
+}
+@font-face {
+  font-family: arabicmts;
+  src: url('29LTAzer-Medium.otf');
+}
+@font-face {
+  font-family: englishmts;
+  src: url('Nexa-ExtraBold.ttf');
+} */
+body {
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #01215c;
+    
+  }
+  
+  input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
