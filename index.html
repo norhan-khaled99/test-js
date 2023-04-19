@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Eid Card</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- <img src="logo-afg.svg" style="width: 400px;height: 50%;"> -->
-    <h1>Eid Card</h1>
-    <center><div style="width: 50%">
+
+<head>
+  <title>Eid Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- <img src="logo-afg.svg" style="width: 400px;height: 50%;"> -->
+  <h1>Eid Card</h1>
+  <center>
+    <div style="width: 50%">
       <input type="text" id="textInput" placeholder="Name in Arabic - الإسم باللغة العربية">
       <input type="text" id="textInput1" placeholder="Name in English - الإسم باللغة الانجليزية">
       <br><br>
       <label for="dept">Department:</label>
-        <select onchange="printText(dept)" name="dept" id="dept">
-          <option value="A">A</option>
-          <option value="B">B</option>
-          <option value="C">C</option>
-        </select><br><br>
+      <select name="dept" id="dept">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select><br><br>
       <button id="submit" onclick="printText()">Submit</button>
       <button id="download" onclick="download()">Download</button>
       <!-- <button id="download" onclick="download()">Download</button> -->
-    </div></center>
-    <div>
-      <img src="Screenshot_20230110_041431.png" alt="Department" id="image">
     </div>
-    <script src="script.js"></script>
-  </body>
+  </center>
+  <div>
+    <img src="Screenshot_20230110_041431.png" alt="Department" id="image">
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
