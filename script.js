@@ -29,20 +29,20 @@ function printText() {
       case "A":
          var background = 'Screenshot 2023-04-18 143809.png';
          var textcolor = '#7E8080';
-         var arabicfont = '200px arabic';
-         var englishfont = '200px english';
+         var arabicfont = '100px arabic';
+         var englishfont = '100px english';
          break;
       case 'B':
          var background = 'Screenshot_20230110_043030.png';
          var textcolor = '#00007A';
-         var arabicfont = '200px arabic';
-         var englishfont = '200px english';
+         var arabicfont = '100px arabic';
+         var englishfont = '100px english';
          break;
       case "C":
          var background = 'Screenshot_20230110_041431.png';
          var textcolor = '#4AC1E0';
-         var arabicfont = '200px arabicmts';
-         var englishfont = '200px englishmts';
+         var arabicfont = '100px arabicmts';
+         var englishfont = '100px englishmts';
          break;
    }
 
@@ -57,9 +57,16 @@ function printText() {
       ctx.fillStyle = textcolor;
       ctx.textAlign = "center";
       ctx.font = arabicfont;
-      ctx.fillText(textInput, canvas.width / 2, (canvas.height / 2) + 2200);
+      /*Specific diminsions for x,y to keep up with my pictures*/
+      ctx.fillText(textInput, canvas.width / 2, (canvas.height / 2) + 50);
       ctx.font = englishfont;
-      ctx.fillText(textInput1, canvas.width / 2, (canvas.height / 2) + 2500);
+      ctx.fillText(textInput1, canvas.width / 2, (canvas.height / 2) + 200);
+      /**************************************************************/
+
+
+      // ctx.fillText(textInput, canvas.width / 2, (canvas.height / 2) + 2200);
+      // ctx.font = englishfont;
+      // ctx.fillText(textInput1, canvas.width / 2, (canvas.height / 2) + 2500);
       dwnimg = document.getElementById("image").src = canvas.toDataURL();
       test = dwnimg;
    }
