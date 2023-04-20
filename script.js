@@ -258,8 +258,9 @@ if (typeof lname !== 'undefined' && lname !== null) {
       const textInput1 = document.getElementById("textInput1").value;
       const canvas = document.createElement("canvas");
       canvas.style.display = "block";
-      canvas.style.margin = "auto";
+      canvas.style.margin = "0 auto";
       canvas.style.width = "-webkit-fill-available";
+
       var dwn = document.createElement('a');
       const img = document.getElementById('image');
 
@@ -291,12 +292,7 @@ if (typeof lname !== 'undefined' && lname !== null) {
       }
 
       img.setAttribute('src', background);
-
       console.log(img.getAttribute('src'));
-      var ctx = canvas.getContext("2d"); // Get the context of the canvas
-
-      ctx.canvas.width = window.innerWidth;
-      ctx.canvas.height = window.innerHeight;
 
       img.onload = function () {
          console.log('Image loaded successfully');
@@ -304,8 +300,9 @@ if (typeof lname !== 'undefined' && lname !== null) {
          const inputText = textInput; // Store input values in variables
          const inputText1 = textInput1;
 
-         // canvas.width = img.width;
-         // canvas.height = img.height;
+         canvas.width = img.width;
+         canvas.height = img.height;
+         var ctx = canvas.getContext("2d"); // Get the context of the canvas
 
          ctx.drawImage(img, 50, 50);
          ctx.fillStyle = textcolor;
