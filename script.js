@@ -15,6 +15,8 @@ if (typeof lname !== 'undefined' && lname !== null) {
    document.getElementById('textInput1').value = lname;
 } else {
    document.getElementById('textInput1').value = '';
+   
+   
 // }
 
 // function printText() {
@@ -247,12 +249,16 @@ if (typeof lname !== 'undefined' && lname !== null) {
 //   }
 // }
 //this is the best
+
+
 function printText() {
   document.getElementById('image').style.display = 'none';
 
   const textInput = document.getElementById("textInput").value;
   const textInput1 = document.getElementById("textInput1").value;
   const canvas = document.createElement("canvas");
+  canvas.style.display="block";
+  canvas.style.margin="auto";
   var dwn = document.createElement('a');
   const img = document.getElementById('image');
   
@@ -296,7 +302,7 @@ function printText() {
     canvas.height = img.height;
     var ctx = canvas.getContext("2d"); // Get the context of the canvas
 
-    ctx.drawImage(img,30,30);
+    ctx.drawImage(img, 50, 50);
     ctx.fillStyle = textcolor;
     ctx.textAlign = "center";
     ctx.font = arabicfont;
@@ -304,10 +310,10 @@ function printText() {
     ctx.font = englishfont;
     ctx.fillText(inputText1, canvas.width / 2, (canvas.height / 2) + 200);
 
-    var existingCanvas = document.querySelector('canvas'); // Find any existing canvas element
-    if (existingCanvas) {
-      existingCanvas.remove(); // Remove existing canvas element if found
-    }
+    // var existingCanvas = document.querySelector('canvas'); // Find any existing canvas element
+    // if (existingCanvas) {
+    //   existingCanvas.remove(); // Remove existing canvas element if found
+    // }
 
     document.body.appendChild(canvas); // Append the canvas element to the DOM
     document.getElementById('download').style.display = 'inline';
