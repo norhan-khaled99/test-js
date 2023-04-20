@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: arabic;
   src: url('GESSMedium.otf') format("opentype");
 }
@@ -13,10 +13,10 @@
 @font-face {
   font-family: englishmts;
   src: url('Nexa-ExtraBold.ttf') format("truetype");
-} 
+}  */
 body {
     background-color: #f2f2f2;
-    font-family: arabicmts;
+    /* font-family: arabicmts; */
 
   }
   
@@ -24,7 +24,7 @@ body {
     text-align: center;
     margin-top: 50px;
     color: #01215c;
-    font-family: englishmts;
+    /* font-family: englishmts; */
 
     
   }
