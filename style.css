@@ -29,6 +29,14 @@ body {
     
   }
   
+  #textInput{
+    font-family: arabicmts;
+  }
+  #textInput1{
+  font-family: englishmts; ;
+  }
+  
+  
   input[type=text] {
     width: 60%;
     padding: 12px 20px;
